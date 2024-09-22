@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F4F9;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+.services-container {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align cards horizontally */
+    justify-content: flex-end; /* Align at the top of the container */
+    position: absolute; /* Absolute positioning to stay at the top */
+    top: 125px; /* Set to the top of the page or parent container */
+    width: 100%; /* Optional: Set the container to span the full width */
+    margin-left: 540px;
+}
+
+  
+  .card {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    margin: 10px; /* Space between cards */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    width: 350px; /* Fixed width */
+    height: 300px; /* Allow height to adjust based on content */
+    border-radius: 20px;
+  }
+  
+  .card img {
+    width: 100%; /* Make image responsive */
+    height: 100%;/* Fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 20px;
+
+  }
+  
+  .card-content {
+    padding: 0px; /* Space around text */
+    text-align: center; /* Center the text */
+  }
+  
+    
+
+
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.price-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-list p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: #000000; /* Purple color for the logo text */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #6d56eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.container-a {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px;
+    padding: 20px;
+  }
+.flight-booking {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 20px;
+  height: auto;
+  width: 68%; /* Adjust width for flight booking section */
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for some depth */
+}
+
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+.flight-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 80%;
+    margin-left: 100px;
+
+}
+
+.input-group-1, .input-group-2 {
+    display: flex;
+    align-items: center; /* Change to center for consistent alignment */
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    margin: 3px;
+    flex: 2; /* Allow both to take up equal width */
+    width: 250px;
+    height: 20px; /* Set a consistent height */
+
+}
+
+.input-group-1 {
+    border-radius: 15px 0 0 15px;
+}
+
+.input-group-2 {
+    border-radius: 0 15px 15px 0;
+    margin-left: 0; /* Remove the gap between the two */
+}
+
+.input-icon {
+    margin-right: 8px;
+    color: purple;
+}
+
+input[type="text"], input[type="date"] {
+    border: none;
+    outline: none;
+    width: 190%;
+    height: 70%; /* Ensures the input fills the  */
+    padding-left: 5px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-show {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    border-radius: 5px 5px 5px 0;
+}
+
+.show-flights-btn {
+    background-color: #450097;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 105px;
+}
+
+.trip-options {
+    display: flex;
+    margin-right: 225px;
+}
+
+.trip-btn, .trip-btn-1 {
+    border: none;
+    padding: 10px 20px;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.trip-btn {
+    border-radius: 15px 0 0 15px;
+}
+
+.trip-btn-1 {
+    border-radius: 0 15px 15px 0;
+}
+
+.trip-btn.active {
+    background-color: #450097;
+    color: white;
+}
+
+.trip-btn:hover, .trip-btn-1:hover {
+    background-color: #450097;
+    color: white;
+}
